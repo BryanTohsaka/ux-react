@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  @apply font-montserrat
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  @apply dark:bg-neutral-900 bg-neutral-100 relative overflow-y-scroll h-full
+}
+.about-img{
+  background-image: url(./assets/img-about.webp);
+  background-position: center;
+  background-size: cover;
+}
+::-webkit-scrollbar {
+  display: none;
+}
