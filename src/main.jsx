@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TwilightVodka from './work/TwilightVodka.jsx'
+import GreenGetaways from './work/GreenGetaways.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/twilight-vodka",
     element: <TwilightVodka />
+  },
+  {
+    path: "/green-getaways",
+    element: <GreenGetaways />
   },
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
