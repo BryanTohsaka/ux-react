@@ -27,13 +27,12 @@ function TwilightVodka() {
               para enfocar la atención en la botella, la verdadera estrella del
               producto.
             </p>
-            <img src={W1} alt="" className="pt-10" />
-            <button
-              href=""
-              className="border-2 dark:border-lime-200 border-neutral-800 rounded px-5 py-2 mt-10 dark:text-lime-200"
-            >
+            <img src={W1} alt="" className="pt-10 mb-20" />
+            <a
+              href="https://www.figma.com/community/file/1357469848535283004/natures-twilight" target="_blank" rel="noreferrer"
+              className="border-2 dark:border-lime-200 border-neutral-800 rounded px-5 py-2 dark:text-lime-200">
               Ver prototipo
-            </button>
+            </a>
           </div>
           {/*end intro*/}
 
@@ -126,7 +125,6 @@ function TwilightVodka() {
                 </li>
               </ul>
             </div>
-            <img data-aos-duration="1000" src={W1} alt="" className="pt-10" />
           </div>
           {/*end intro*/}
         </div>

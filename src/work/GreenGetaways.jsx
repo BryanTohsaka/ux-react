@@ -1,139 +1,70 @@
 import Back from "../components/Back";
 import w2 from "../assets/w2.webp";
+import w2Full from "../assets/w2-full.webp";
 import ScrollTop from "../components/ScrollTop";
 function GreenGetaways() {
-    return (
-      <>
-        <ScrollTop />
-        <div className="w-full h-fit flex flex-col overflow-auto ">
-          <div className="bg-w2 bg-top bg-no-repeat bg-cover bg-fixed h-60">
-            <div className=" backdrop-blur-sm text-center w-full h-full flex justify-center items-center uppercase text-4xl font-bold text-lime-200 dark:bg-neutral-900/60 ">
-              <h1>natures twilight vodka</h1>
-            </div>
-          </div>
-  
-          <div className="py-10 lg:px-96 px-10">
-            {/* intro*/}
-            <div>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 mb-6">
-                Contexto del Proyecto:
-              </h3>
-              <p className=" mt-10 dark:text-neutral-400">
-                Inspirado por un diseño excepcional de una botella de vodka en
-                Pinterest, descubrí la creatividad de Terence López, un diseñador
-                innovador. Decidí aplicar su enfoque a través del diseño de una
-                landing page para la marca de vodka Natures Twilight. La paleta de
-                colores se basa en tonos menta brillantes y negros contrastantes
-                para enfocar la atención en la botella, la verdadera estrella del
-                producto.
-              </p>
-              <img src={w2} alt="" className="pt-10" />
-              <button
-                href=""
-                className="border-2 dark:border-lime-200 border-neutral-800 rounded px-5 py-2 mt-10 dark:text-lime-200"
-              >
-                Ver prototipo
-              </button>
-            </div>
-            {/*end intro*/}
-  
-            {/* intro*/}
-            <div>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Objetivos del Proyecto:
-              </h3>
-              <div className=" mt-10 dark:text-neutral-400 pl-8">
-                <ul className="list-disc">
-                  <li className="mt-4">
-                    Crear una landing page atractiva que resalte la botella de
-                    vodka "Nature's Twilight".
-                  </li>
-                  <li className="mt-4">
-                    Utilizar la paleta de colores de tonos menta y negros para
-                    transmitir elegancia y frescura.
-                  </li>
-                  <li className="mt-4">
-                    Garantizar una experiencia de usuario intuitiva y centrada en
-                    el producto para fomentar la interacción y las conversiones.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/*end intro*/}
-  
-            {/* intro*/}
-            <div>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Wireframes y Prototipos:
-              </h3>
-              <p className=" mt-10 dark:text-neutral-400">
-                Se crearon wireframes detallados y prototipos interactivos que
-                presentaban el diseño de la landing page, destacando la botella de
-                vodka "Nature's Twilight" en diferentes secciones.
-              </p>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Diseño Visual:
-              </h3>
-              <p className=" mt-10 dark:text-neutral-400">
-                Se implementaron tonos menta brillantes y negros en el diseño,
-                creando un contraste elegante. Se utilizaron imágenes de alta
-                calidad de la botella y se aplicaron efectos visuales sutiles para
-                realzar su atractivo.
-              </p>
-              <img src={w2} alt="" className="pt-10" />
-            </div>
-            {/*end intro*/}
-  
-            {/* intro*/}
-            <div>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Lecciones Aprendidas:
-              </h3>
-              <p className=" mt-10 dark:text-neutral-400">
-                La combinación de colores y el enfoque centrado en el producto
-                resultaron en una experiencia visualmente atractiva y efectiva
-                para los usuarios.
-              </p>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Recomendaciones Futuras:
-              </h3>
-              <p className=" mt-10 dark:text-neutral-400">
-                Explorar la posibilidad de integrar elementos de interactividad
-                para mejorar aún más la participación del usuario en la página de
-                inicio.
-              </p>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Resumen Final:
-              </h3>
-              <p className=" mt-10 dark:text-neutral-400">
-                El rediseño de la landing page para "Nature's Twilight" no solo
-                resalta la elegancia de la botella de vodka, sino que también
-                mejora la interacción del usuario y las conversiones, brindando
-                una experiencia memorable a los visitantes del sitio web.
-              </p>
-              <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">
-                Fuentes Utilizadas:
-              </h3>
-              <div className=" mt-10 dark:text-neutral-400 pl-8">
-                <ul className="list-disc">
-                  <li className="mt-4">
-                    Diseños de Terence López que inspiraron el enfoque creativo
-                    del proyecto.
-                  </li>
-                  <li className="mt-4">
-                    Encuestas en línea y datos de usuarios que contribuyeron a la
-                    toma de decisiones en el diseño de la landing page.
-                  </li>
-                </ul>
-              </div>
-              <img data-aos-duration="1000" src={w2} alt="" className="pt-10" />
-            </div>
-            {/*end intro*/}
+  return (
+    <>
+      <ScrollTop />
+      <div className="w-full h-fit flex flex-col overflow-auto ">
+        <div className="bg-w2 bg-top bg-no-repeat bg-cover bg-fixed h-60">
+          <div className=" backdrop-blur-sm text-center w-full h-full flex justify-center items-center uppercase text-4xl font-bold text-lime-200 dark:bg-neutral-900/60 ">
+            <h1>Green Getaways</h1>
           </div>
         </div>
-        <Back />
-      </>
-    );
-  }
 
-export default GreenGetaways
+        <div className="py-10 lg:px-96 px-10">
+          {/* intro*/}
+          <div>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 mb-6">Descripción del Proyecto:</h3>
+            <p className=" mt-10 dark:text-neutral-400">Green Getaways es una empresa dedicada a ofrecer experiencias de viaje sostenibles y eco-friendly. Para mi proyecto personal, decidí emprender el desafío de rediseñar su sitio web como parte de mi portafolio creativo. El objetivo era crear una plataforma en línea que reflejara la esencia de Green Getaways y destacara su compromiso con la sostenibilidad, al mismo tiempo que demostrara mi capacidad para diseñar experiencias digitales envolventes y efectivas.</p>
+            <img src={w2} alt="" className="pt-10 mb-20" />
+            <a href="https://www.figma.com/file/rGX1v74HPwIBaBNg2AqwNT/Green-Getaways?type=design&mode=design&t=yUg6mRSZros999PX-1" target="_blank" rel="noreferrer"
+            className="border-2 dark:border-lime-200 border-neutral-800 rounded px-5 py-2 dark:text-lime-200">
+              Ver prototipo
+            </a>
+          </div>
+          {/*end intro*/}
+
+          {/* intro*/}
+          <div>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">Objetivos del Proyecto:</h3>
+            <div className=" mt-10 dark:text-neutral-400 pl-8">
+              <ul className="list-disc">
+                <li className="mt-4">Redefinir la experiencia del usuario, poniendo la sostenibilidad en el centro del diseño.</li>
+                <li className="mt-4">Resaltar la amplia gama de destinos y experiencias eco-friendly ofrecidas por Green Getaways.</li>
+                <li className="mt-4">Fomentar la conversión de visitantes en viajeros comprometidos con la protección del medio ambiente.</li>
+                <li className="mt-4">Consolidar mi identidad como un diseñador creativo y comprometido con el turismo responsable.</li>
+              </ul>
+            </div>
+          </div>
+          {/*end intro*/}
+
+          {/* intro*/}
+          <div>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">Análisis Competitivo:</h3>
+            <p className=" mt-10 dark:text-neutral-400">Analizé otros sitios web de empresas de viajes sostenibles para identificar tendencias del mercado y mejores prácticas en diseño. Estudié cómo estas empresas presentaban su oferta de viajes y cómo se comunicaban con su audiencia.</p>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">Ideación y Conceptualización:</h3>
+            <p className=" mt-10 dark:text-neutral-400">Generé ideas y conceptos para el diseño del sitio web, centrándome en transmitir la belleza y la importancia de la naturaleza. Quería crear una experiencia visualmente atractiva que inspirara a los visitantes a explorar destinos sostenibles.</p>
+            <img src={w2Full} alt="" className="pt-10" />
+          </div>
+          {/*end intro*/}
+
+          {/* intro*/}
+          <div>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">Diseño de Interfaz de Usuario:</h3>
+            <p className=" mt-10 dark:text-neutral-400">Opté por un diseño limpio y minimalista que destacara las imágenes y la información sobre los destinos y experiencias ofrecidas por Green Getaways. Utilicé tonos de verde y elementos naturales para reflejar la conexión con la naturaleza que promueve la empresa.</p>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">Iteraciones y Mejoras:</h3>
+            <p className=" mt-10 dark:text-neutral-400">Basándome en los comentarios recibidos durante las pruebas de usabilidad, realicé iteraciones en el diseño del sitio web para mejorar la experiencia del usuario. Ajusté la disposición de los elementos, refiné la navegación y optimicé el rendimiento del sitio para garantizar una experiencia fluida y agradable.</p>
+            <h3 className=" capitalize font-semibold text-3xl dark:text-neutral-100 my-6">Logros del Proyecto:</h3>
+            <p className=" mt-10 dark:text-neutral-400">El resultado final es un sitio web rediseñado que refleja la identidad de Green Getaways y proporciona una experiencia de usuario mejorada. Destaca la oferta de viajes sostenibles de la empresa de manera atractiva y accesible, al tiempo que demuestra mis habilidades como diseñador creativo y comprometido con la sostenibilidad.</p>
+          </div>
+          {/*end intro*/}
+        </div>
+      </div>
+      <Back />
+    </>
+  );
+}
+
+export default GreenGetaways;
