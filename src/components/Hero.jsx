@@ -10,13 +10,13 @@ function Hero() {
           <span className="text-lime-200">designer</span>
         </h1>
         <p className="dark:text-zinc-500 pt-10 lg:pr-80 text-lg">
-          Diseñador UX/UI con un enfoque único para fusionar la creatividad
+          Prouct Designer con un enfoque único para fusionar la creatividad
           visual con la funcionalidad excepcional. 
           <p className="pt-4">
           Mi misión es crear
           experiencias digitales que cuenten historias, deleiten a los usuarios
           y transformen ideas en interfaces cautivadoras. Bienvenido/a a mi
-          mundo digital, donde cada clic cuenta una historia visual única.
+          mundo digital.
           </p>
         </p>
         <a

@@ -5,6 +5,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TwilightVodka from './work/TwilightVodka.jsx'
 import GreenGetaways from './work/GreenGetaways.jsx'
+import TacticalEncounter from './work/TacticalEncounter.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/green-getaways",
     element: <GreenGetaways />
+  },
+  {
+    path: "/tactical-encounter",
+    element: <TacticalEncounter />
   },
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(

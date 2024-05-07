@@ -26,7 +26,7 @@ function About() {
           <span className="flex flex-col-reverse lg:flex-row gap-8 items-center">
             <p className="dark:text-white lg:w-2/3">
               A lo largo de mi carrera de{" "}
-              <span className="text-lime-500 dark:text-lime-300">cuatro años</span> como diseñador
+              <span className="text-lime-500 dark:text-lime-300">cuatro años</span> como desarrollador front-end y diseñador
               UX/UI, he trabajado en una variedad de proyectos desafiantes y
               emocionantes.
               <span className="block mt-4">
