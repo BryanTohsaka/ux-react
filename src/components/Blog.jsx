@@ -1,29 +1,31 @@
-
 import React, { useState, useEffect } from "react";
-
+import { IoArrowForwardOutline } from "react-icons/io5";
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await fetch("https://gql.hashnode.com/", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            query: `
+    useEffect(() => {
+        const fetchPosts = async () => {
+            try {
+                const response = await fetch("https://gql.hashnode.com/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        query: `
               query Publication {
                 publication(host: "bryan-tohsaka.hashnode.dev") {
                   isTeam
                   title
-                  posts(first: 10) {
+                  posts(first: 3) {
                     edges {
                       node {
                         title
                         brief
                         url
+                        tags {
+                            name
+                          }
                         coverImage {
                           url
                         }
@@ -33,39 +35,47 @@ const Blog = () => {
                 }
               }
             `,
-          }),
-        });
-        const result = await response.json();
-        setPosts(result.data.publication.posts.edges.map((edge) => edge.node));
-      } catch (error) {
-        console.error("Error fetching posts:", error);
-      }
-    };
+                    }),
+                });
+                const result = await response.json();
+                setPosts(result.data.publication.posts.edges.map((edge) => edge.node));
+            } catch (error) {
+                console.error("Error fetching posts:", error);
+            }
+        };
 
-    fetchPosts();
-  }, []);
+        fetchPosts();
+    }, []);
 
-  return (
-    <section className="w-full h-fit mb-36 px-10 lg:px-28">
-      <h2 className="uppercase text-[4em] lg:text-[10em] font-bold text-neutral-200 dark:text-white/10 text-left " data-aos="zoom-out-up" data-aos-duration="800" data-aos-offset="200">
-          Blog
-        </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {posts.map((post, index) => (
-          <div key={index} className="post-card bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src={post.coverImage.url} alt={post.title} className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">{post.title}</h3>
-              <p className="text-gray-700 mb-4">{post.brief}</p>
-              <a href={post.url} className="text-blue-500 hover:underline">
-                Leer más
-              </a>
+    return (
+        <section className="w-full h-fit mb-36 px-10 lg:px-28">
+            <h2 className="uppercase text-[4em] lg:text-[10em] font-bold text-neutral-200 dark:text-white/10 text-left " data-aos="zoom-out-up" data-aos-duration="800" data-aos-offset="200">
+                Blog
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 " data-aos="fade-right" data-aos-duration="800" data-aos-offset="200">
+                {posts.map((post, index) => (
+                    <div key={index} className="post-card border-2 border-neutral-700 shadow-lg rounded-lg overflow-hidden ">
+                        <img src={post.coverImage.url} alt={post.title} className="w-full h-48 object-cover" />
+                        <div className="p-6">
+                            <h3 className="text-xl font-bold mb-2 text-lime-200">{post.title}</h3>
+                            <div className="mb-4">
+                                {post.tags.map((tag, tagIndex) => (
+                                    <span key={tagIndex} className="inline-block border-[1px] border-lime-200 text-lime-100 rounded-full px-3 py-1 text-[.7em] font-semibold mr-2">
+                                        #{tag.name}
+                                    </span>
+                                ))}
+                            </div>
+                            <p className="mb-8 text-neutral-300 text-sm">{post.brief}</p>
+                            
+                            <a href={post.url} className="hover:bg-lime-400 hover:text-neutral-900 font-medium hover:px-8 rounded-md border-[1px] transition-all ease-in-out duration-300 text-lime-400 p-2 flex items-center w-fit group" target="_blank">
+                                Leer más <IoArrowForwardOutline className=" ml-2 hidden group-hover:inline-flex " />
+                            </a>
+                        </div>
+                    </div>
+                ))}
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default Blog;
