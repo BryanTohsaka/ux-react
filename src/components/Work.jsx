@@ -1,8 +1,8 @@
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Projects from "./data.json";
 
 function Work() {
   useEffect(() => {
@@ -10,46 +10,25 @@ function Work() {
   }, []);
   return (
     <>
-    <div className="w-full h-fit mb-36 px-10 lg:px-28 " id="work">
-        <h1
-          className="uppercase text-[4em] lg:text-[10em] font-bold text-neutral-200 dark:text-white/10 text-right "
-          data-aos="zoom-out-up"
-          data-aos-duration="800"
-          data-aos-offset="200"
-        >
+      <div className="w-full h-fit mb-36 px-10 lg:px-28 " id="work">
+        <h1 className="uppercase text-[4em] lg:text-[10em] font-bold text-neutral-200 dark:text-white/10 text-right " data-aos="zoom-out-up" data-aos-duration="800" data-aos-offset="200">
           work
         </h1>
-        {/*first section*/}
-        <div className="w-full transition-all gap-10 flex flex-col md:flex-row">
-            <Link to={'/twilight-vodka'} preventScrollReset data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" className="cursor-pointer w-full rounded-2xl bg-w1 bg-no-repeat bg-center bg-cover h-96"></Link>
-            <Link to={'/green-getaways'} preventScrollReset data-aos="fade-up" data-aos-duration="500" className="cursor-pointer w-full rounded-2xl bg-w2 bg-no-repeat bg-center bg-cover h-96"></Link>
-        </div>
-        {/*end first section*/}
 
-        {/*second section*/}
-        <div className="w-full transition-all gap-10 flex flex-col md:flex-row mt-10">
-            <Link to={'/tactical-encounter'} preventScrollReset  data-aos="fade-up" data-aos-duration="500" className="cursor-pointer w-full lg:w-8/12 rounded-2xl bg-w3 bg-no-repeat bg-center bg-cover h-96"></Link>
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" className="cursor-pointer w-full rounded-2xl bg-w1 bg-no-repeat bg-center bg-cover h-96"></div>
+        <div className=" w-full h-fit flex lg:flex-row flex-col flex-wrap justify-between gap-y-10">
+          {Projects.map((proyecto, index) => (
+            <Link to={proyecto.url} key={index} className="work-p w-full lg:w-[48%] h-fit card lg:flex-none project-card " data-aos="fade-up" data-aos-duration="700" data-aos-delay={proyecto.delay}>
+              <div className={proyecto.claseFondo + " rounded-lg overflow-hidden w-full h-80 bg-cover bg-center flex items-end transition-all ease-in-out  duration-200 hover:scale-105"}>
+                <div className="dark:bg-neutral-900/60 bg-neutral-200/30  backdrop-blur-lg w-full p-3 ">
+                  <h2 className=" text-neutral-200 font-semibold text-2xl">{proyecto.titulo}</h2>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-        {/*end second section*/}
-
-        {/*third section*/}
-        <div className="w-full transition-all gap-10 flex flex-col md:flex-row mt-10">
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" className="cursor-pointer w-full  rounded-2xl bg-w1 bg-no-repeat bg-center bg-cover h-96"></div>
-            <div data-aos="fade-up" data-aos-duration="500" className="cursor-pointer w-full rounded-2xl bg-w1 lg:w-8/12 bg-no-repeat bg-center bg-cover h-96"></div>
-        </div>
-        {/*end third section*/}
-
-        {/*first section*/}
-        <div className="w-full transition-all gap-10 flex flex-col lg:flex-row mt-10">
-            <div data-aos="fade-up" data-aos-duration="500" className="cursor-pointer w-full rounded-2xl bg-w1 bg-no-repeat bg-center bg-cover h-96"></div>
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" className="cursor-pointer w-full rounded-2xl bg-w1 bg-no-repeat bg-center bg-cover h-96"></div>
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"className="cursor-pointer w-full rounded-2xl bg-w1 bg-no-repeat bg-center bg-cover h-96"></div>
-          </div>
-        {/*end first section*/}
       </div>
     </>
-  )
+  );
 }
 
-export default Work
+export default Work;

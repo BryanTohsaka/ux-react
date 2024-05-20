@@ -22,3 +22,8 @@ body{
 ::-webkit-scrollbar {
   display: none;
 }
+
+.project-card:hover{
+  box-shadow: 0 23px 100px rgba(187, 255, 51, 0.536);
+  transition: ease-in-out;
+}

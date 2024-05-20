@@ -1,22 +1,20 @@
 [
     {
-        "id": 1,
-        "title": "Elemento 1",
-        "description": "Descripción del elemento 1"
+        "titulo": "Twilight Vodka",
+        "claseFondo": "bg-w1",
+        "url": "/twilight-vodka",
+        "delay": "200"
     },
     {
-        "id": 2,
-        "title": "Elemento 2",
-        "description": "Descripción del elemento 2"
+        "titulo": "Green Getaways",
+        "claseFondo": "bg-w2",
+        "url": "/green-getaways",
+        "delay": "400"
     },
     {
-        "id": 3,
-        "title": "Elemento 3",
-        "description": "Descripción del elemento 3"
-    },
-    {
-        "id": 4,
-        "title": "Elemento 4",
-        "description": "Descripción del elemento 4"
+        "titulo": "Tactical Encounter",
+        "claseFondo": "bg-w3",
+        "url": "/tactical-encounter",
+        "delay": "300"
     }
 ]
