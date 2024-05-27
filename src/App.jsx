@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Timeline from './components/Timeline'
 import Work from './components/Work'
 import Contact from './components/Contact'
 import AnimateApp from './components/AnimateApp'
@@ -15,6 +16,7 @@ function App() {
     <Navbar />
     <Hero />
     <About />
+    <Timeline />
     <Work />
     <Blog />
     <Contact />

@@ -2,19 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-*{
-  @apply font-montserrat
+* {
+  @apply font-montserrat;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
-  @apply dark:bg-neutral-900 bg-neutral-100 relative overflow-y-scroll h-full
+body {
+  @apply dark:bg-neutral-900 bg-neutral-100 relative overflow-y-scroll h-full;
 }
-.about-img{
+.about-img {
   background-image: url(./assets/img-about.webp);
   background-position: center;
   background-size: cover;
@@ -22,7 +20,12 @@ body{
 ::-webkit-scrollbar {
   display: none;
 }
-.project-card:hover{
+.project-card:hover {
   box-shadow: 0 23px 100px rgba(187, 255, 51, 0.536);
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
+.work-p::after {
+  background: inherit;
+  filter: blur(15px) contrast(200%);
+}
+

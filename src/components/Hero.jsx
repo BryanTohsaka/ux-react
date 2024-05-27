@@ -21,7 +21,7 @@ function Hero() {
         </p>
         <a
           href="#contact"
-          className="bg-lime-500 py-2 px-10 rounded-md mt-8 hover:scale-105 transition-all duration-200"
+          className="bg-lime-400 py-2 px-10 rounded-md mt-8 hover:scale-105 transition-all duration-200"
         >
           Contactame
         </a>
