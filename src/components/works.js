@@ -1,18 +1,27 @@
-// src/data/works.js
 const works = [
   {
-    title: "Desarrollador Frontend",
-    description: "Trabajé en la creación de interfaces de usuario utilizando React y Tailwind CSS.",
-    date: "Enero 2020 - Junio 2021",
-    place: "empresa"
+    title: "Product Designer",
+    description: "Rediseñé la plataforma y el proceso de registro de usuarios, logrando un aumento del 30% en registros y un 70% en inversiones gracias a las mejoras en la experiencia del usuario.",
+    date: "Marzo 2023 - Actualidad",
+    place: "M2 Crowd",
   },
   {
-    title: "Ingeniero de Software",
-    description: "Desarrollé y mantuve aplicaciones web y servicios backend utilizando Node.js.",
-    date: "Julio 2021 - Presente",
-    place: "empresa"
+    title: "Product Designer",
+    description: "Lideré la migración de PrestaShop a WooCommerce y rediseñé el sitio web para mejorar la experiencia del usuario y las conversiones. Implementé estrategias de marketing que aumentaron el tráfico web y las ventas en un 60%.",
+    date: "Abril 2020 - Marzo 2023",
+    place: "Alis Abastecedora Nacional",
   },
-  // Añade más trabajos según sea necesario
+  {
+    title: "Desarrollador Web",
+    description: "Creé y diseñé un sitio web para servicios de entrenamiento de perros, gestioné redes sociales y optimicé la experiencia del usuario, lo que resultó en un notable aumento de visitas y citas agendadas.",
+    date: "Junio 2018 - Abril 2020",
+    place: "Dog On Point",
+  },
+  {
+    title: "Desarrollador Web",
+    description: "Desarrollé y diseñé sitios web centrados en mejorar la experiencia del usuario y gestioné campañas de Google Ads, logrando un aumento significativo en citas y ventas.",
+    date: "Enero 2017 - Actualidad",
+    place: "Pioouch Off",
+  },
 ];
-
 export default works;

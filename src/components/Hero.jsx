@@ -1,5 +1,3 @@
-
-
 function Hero() {
   return (
     <>
@@ -10,24 +8,15 @@ function Hero() {
           <span className="text-lime-200">designer</span>
         </h1>
         <p className="dark:text-zinc-500 pt-10 lg:pr-80 text-lg">
-          Prouct Designer con un enfoque único para fusionar la creatividad
-          visual con la funcionalidad excepcional. 
-          <p className="pt-4">
-          Mi misión es crear
-          experiencias digitales que cuenten historias, deleiten a los usuarios
-          y transformen ideas en interfaces cautivadoras. Bienvenido/a a mi
-          mundo digital.
-          </p>
+          Product Designer con una sólida experiencia en el desarrollo y diseño de interfaces de usuario, atractivas y funcionales. Me especializo en crear experiencias de usuario, intuitivas que no solo satisfacen las necesidades de los usuarios, sino que también generan resultados comerciales efectivos. 
+          <p className="pt-4">Desde la conceptualización hasta la implementación, mi enfoque está siempre en la innovación y la excelencia en el diseño.</p>
         </p>
-        <a
-          href="#contact"
-          className="bg-lime-400 py-2 px-10 rounded-md mt-8 hover:scale-105 transition-all duration-200"
-        >
+        <a href="#contact" className="bg-lime-400 py-2 px-10 rounded-md mt-8 hover:scale-105 transition-all duration-200">
           Contactame
         </a>
       </div>
     </>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
