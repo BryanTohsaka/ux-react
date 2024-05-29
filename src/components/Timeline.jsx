@@ -29,7 +29,8 @@ function Timeline() {
 
         ))}
         <a
-          href="#contact"
+          href="../assets/bryan-avina-product-designer-24.pdf"
+          download
           className="bg-lime-400 py-2 px-7 rounded-md mt-8 transition-all duration-200 font-medium flex content-center" data-aos="fade-up" data-aos-duration="600"
         >
           Descarga mi CV <Download className="ml-3" />
